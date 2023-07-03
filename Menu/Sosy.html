@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md mt-3"><!--navbar-->
+        <a href="../Website.html" class="navbar-brand ms-5"><img src="../images/logo.jpg" alt="" id="imgLogo"></a> 
+        <div class="container-fluid mt-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"> <!--Ikonka z rozwijanym navbarem, breakpoint md-->
+            <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse " id="navbarMenu"> 
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item active">  <!--podstrony-->
+                            <a href="Pizza.html" class="nav-link text me-md-5">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Blog.html" class="nav-link text me-md-5">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Praca.html" class="nav-link text me-md-5">Praca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Kontakt.html" class="nav-link text me-md-5">Kontakt</a>
+                        </li>
+                    </ul>
+                    <div> <!--logowanie-->
+                        <span class="mt-0"><a class="link-dark text-decoration-none" href="#">Zaloguj się <i class="fas fa-regular fa-user fa-sm"></i></a> </span>
+                        <hr>
+                    </div>
+            </div>
+    </nav>
+   
+</header> 
+
+<main><!--main-->
+    <nav class="navbar navbar-expand-md mainNav">
+        <div class="container-fluid mt-0">
+            <div class="navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="Pizza.html" class="nav-link text me-2 ms-2">Pizza</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="Przystawki.html" class="nav-link text me-2 ms-2">Przystawki</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="Sosy.html" class="nav-link text me-2 ms-2">Sosy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Desery.html" class="nav-link text me-2 ms-2">Desery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Napoje.html" class="nav-link text me-2 ms-2">Napoje</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <div class="container"><!--sosy cards-->
+        <div class="row mt-3"> 
+            <div class="col-sm-12 col-md-6">
+                <div class="card">
+                    <img src="Sosy/Ketchup.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title"><span class="pizzaTitle">Ketchup</span> 4zł</h3>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, iure!</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary btn-rounded">Wybierz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="card">
+                    <img src="Sosy/Mustard.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title"><span class="pizzaTitle">Musztarda</span> 4zł</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, odio corrupti!</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary btn-rounded">Wybierz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="card">
+                    <img src="Sosy/Sauce.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title"><span class="pizzaTitle">Chilli</span> 5zł</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda culpa minima quo?</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary btn-rounded">Wybierz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="card">
+                    <img src="Sosy/Sauce2.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title"><span class="pizzaTitle">Salsa</span> 5zł</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, laboriosam repudiandae.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary btn-rounded">Wybierz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    
+</main> 
+    
+<footer>
+    <div class="container mt-2">
+        <div class="row ms-md-5">
+            <div class="col-md-9">
+                <a href="../Website.html"><img src="../images/logo.jpg" alt="" id="footLogo" class="me-md-5"></a>
+                <a href="Pizza.html" class="me-md-5 text">Menu</a>
+                <a href="../Blog.html" class="me-md-5 text">Blog</a>
+                <a href="../Praca.html" class="me-md-5 text">Praca</a>
+                <a href="../Kontakt.html" class="me-md-5 text">Kontakt</a>
+            </div>
+        
+            <div class="col-md-3 mt-2">
+                <a href="#" class="ms-md-4"><i class="fas fa-brands fa-facebook-f footIcon"></i></a>&nbsp;&nbsp;
+                <a href="#" class="ms-md-4"><i class="fas fa-brands fa-instagram footIcon"></i></a></i>&nbsp;&nbsp;
+                <a href="#" class="ms-md-4"><i class="fas fa-brands fa-youtube footIcon"></i></a>&nbsp;&nbsp;
+            </div>  
+        </div>
+        
+    </div>
+    <div class="container mt-2 ps-5 pe-5" id="footInner">
+        <a href="#" class="ms-md-2 footText">Polityka prywatności</a>
+        <a href="#" class="ms-md-2 footText">Regulamin serwisu</a>
+        <a href="#" class="ms-md-2 footText">Informacje o alergenach</a>
+        <a href="#" class="ms-md-2 footText">Regulaminy promocji</a>
+        <a href="#" class="ms-md-2 footText">Dla akcjonariuszy</a>
+        <p class="footerText">2023 pizzeria. All rights resereved</p>
+    </div>
+</footer> <!--footer-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

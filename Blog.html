@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md mt-3"><!--navbar-->
+        <a href="Website.html" class="navbar-brand ms-5"><img src="images/logo.jpg" alt="" id="imgLogo"></a> 
+        <div class="container-fluid mt-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"> <!--Ikonka z rozwijanym navbarem, breakpoint md-->
+            <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarMenu"> 
+                    <ul class="navbar-nav ms-4 me-auto mb-2 mb-md-0">
+                        <li class="nav-item">  <!--podstrony-->
+                            <a href="Menu/Pizza.html" class="nav-link text me-md-5">Menu</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="Blog.html" class="nav-link text me-md-5">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Praca.html" class="nav-link text me-md-5">Praca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Kontakt.html" class="nav-link text me-md-5">Kontakt</a>
+                        </li>
+                    </ul>
+                    <div> <!--logowanie-->
+                        <span class="mt-0"><a class="link-dark text-decoration-none" href="#">Zaloguj się <i class="fas fa-regular fa-user fa-sm"></i></a> </span>
+                        <hr>
+                    </div>
+            </div>
+    </nav>
+   
+</header> 
+
+<main class="blogText"><!--main-->
+    <div class="container carousel-container"> <!-- carousel -->
+       <div class="carousel slide" id="topCarousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#topCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#topCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#topCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/image1.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Jak zrobić dobrą pizzę</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, laudantium.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/image2.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Po imprezie najlepsza pizza</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nostrum nemo beatae non dicta corrupti?</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/image3.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Jedzenie razem najlepiej smakuje</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, tempora eaque.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#topCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-cion" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#topCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-cion" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+       </div>
+    </div>
+
+    <div class="container"><!--Posts,pagination-->
+        <div class="row"> <!--Posts-->
+            <div class="col-md-6 mt-5 mb-5">
+                <div class="blog-post">
+                    <img src="images/blog/image1.jpg" alt="" class="rounded float-end w-50 ms-4 mb-4">
+                    <h2 class="blog-post-title">Pierwszy post</h2>
+                    <p class="blog-post-date date-text">10 stycznia <a href="#" class="userName">Adam</a></p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                </div>
+                <div class="blog-post">
+                    <img src="images/blog/image3.jpg" alt="" class="rounded float-end w-50 ms-4 mb-4">
+                    <h2 class="blog-post-title">Trzeci post</h2>
+                    <p class="blog-post-date date-text">24 stycznia <a href="#" class="userName">Daniel</a></p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                </div>
+                <div class="blog-post">
+                    <img src="images/blog/image5.jpg" alt="" class="rounded float-end w-50 ms-4 mb-4">
+                    <h2 class="blog-post-title">Piąty post</h2>
+                    <p class="blog-post-date date-text">14 lutego <a href="#" class="userName">Adam</a></p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                </div>
+                <div class="blog-post">
+                    <img src="images/blog/image7.jpg" alt="" class="rounded float-end w-50 ms-4 mb-4">
+                    <h2 class="blog-post-title">Siódmy post</h2>
+                    <p class="blog-post-date date-text">11 marca <a href="#" class="userName">Bartek</a></p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                </div>
+                <div class="blog-post">
+                    <img src="images/blog/image9.jpg" alt="" class="rounded float-end w-50 ms-4 mb-4">
+                    <h2 class="blog-post-title">Dziewiąty post</h2>
+                    <p class="blog-post-date date-text">2 kwietnia <a href="#" class="userName">Karolina</a></p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                </div>
+            </div>
+            <div class="col-md-6 mt-5 mb-5">
+                <div class="blog-post">
+                    <img src="images/blog/image2.jpg" alt="" class="rounded float-end w-50 ms-4 mb-4">
+                    <h2 class="blog-post-title">Drugi post</h2>
+                    <p class="blog-post-date date-text">17 stycznia <a href="#" class="userName">Adam</a></p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                </div>
+                <div class="blog-post">
+                    <img src="images/blog/image4.jpg" alt="" class="rounded float-end w-50 ms-4 mb-4">
+                    <h2 class="blog-post-title">Czwarty Post</h2>
+                    <p class="blog-post-date date-text">1 lutego <a href="#" class="userName">Ania</a></p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                </div>
+                <div class="blog-post">
+                    <img src="images/blog/image6.jpg" alt="" class="rounded float-end w-50 ms-4 mb-4">
+                    <h2 class="blog-post-title">Szósty post</h2>
+                    <p class="blog-post-date date-text">24 lutego <a href="#" class="userName">Karolina</a></p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                </div>
+                <div class="blog-post">
+                    <img src="images/blog/image8.jpg" alt="" class="rounded float-end w-50 ms-4 mb-4">
+                    <h2 class="blog-post-title">Ósmy post</h2>
+                    <p class="blog-post-date date-text">20 marca <a href="#" class="userName">Adam</a></p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                </div>
+                <div class="blog-post">
+                    <img src="images/blog/image10.jpg" alt="" class="rounded float-end w-50 ms-4 mb-4">
+                    <h2 class="blog-post-title">Dziesiąty post</h2>
+                    <p class="blog-post-date date-text">15 kwietnia <a href="#" class="userName">Bartek</a></p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus porro voluptates facere suscipit sit!</p>
+                </div>
+            </div>
+
+                <nav class="mt-5"> <!--pagination-->
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a href="#" tabindex="-1" class="page-link">Poprzednie</a>
+                            <li class="page-item">
+                                <a href="#" class="page-link active">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="#" class="page-link">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="#" class="page-link">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="#" class="page-link">4</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="#" class="page-link">5</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="#" class="page-link">6</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="#" class="page-link">7</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="#" class="page-link">Następne</a>
+                            </li>
+                        </li>
+                    </ul>
+                </nav>
+            
+        </div>
+    </div> 
+    
+</main> 
+    
+<footer> <!--footer-->
+    <div class="container mt-2">
+        <div class="row ms-md-5">
+            <div class="col-md-9">
+                <a href="Website.html"><img src="images/logo.jpg" alt="" id="footLogo" class="me-md-5"></a>
+                <a href="Menu/Pizza.html" class="me-md-5 text">Menu</a>
+                <a href="Blog.html" class="me-md-5 text">Blog</a>
+                <a href="Praca.html" class="me-md-5 text">Praca</a>
+                <a href="Kontakt.html" class="me-md-5 text">Kontakt</a>
+            </div>
+        
+            <div class="col-md-3 mt-2">
+                <a href="#" class="ms-md-4"><i class="fas fa-brands fa-facebook-f footIcon"></i></a>&nbsp;&nbsp;
+                <a href="#" class="ms-md-4"><i class="fas fa-brands fa-instagram footIcon"></i></a></i>&nbsp;&nbsp;
+                <a href="#" class="ms-md-4"><i class="fas fa-brands fa-youtube footIcon"></i></a>&nbsp;&nbsp;
+            </div>  
+        </div>
+        
+    </div>
+    <div class="container mt-2 ps-5 pe-5" id="footInner">
+        <a href="#" class="ms-md-2 footText">Polityka prywatności</a>
+        <a href="#" class="ms-md-2 footText">Regulamin serwisu</a>
+        <a href="#" class="ms-md-2 footText">Informacje o alergenach</a>
+        <a href="#" class="ms-md-2 footText">Regulaminy promocji</a>
+        <a href="#" class="ms-md-2 footText">Dla akcjonariuszy</a>
+        <p class="footerText">2023 pizzeria. All rights resereved</p>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

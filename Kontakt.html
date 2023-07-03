@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md mt-3"><!--navbar-->
+        <a href="Website.html" class="navbar-brand ms-5"><img src="images/logo.jpg" alt="" id="imgLogo"></a> 
+        <div class="container-fluid mt-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"> <!--Ikonka z rozwijanym navbarem, breakpoint md-->
+            <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarMenu"> 
+                    <ul class="navbar-nav ms-4 me-auto mb-2 mb-md-0">
+                        <li class="nav-item">  <!--podstrony-->
+                            <a href="Menu/Pizza.html" class="nav-link text me-md-5">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Blog.html" class="nav-link text me-md-5">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Praca.html" class="nav-link text me-md-5">Praca</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="Kontakt.html" class="nav-link text me-md-5">Kontakt</a>
+                        </li>
+                    </ul>
+                    <div> <!--logowanie-->
+                        <span class="mt-0"><a class="link-dark text-decoration-none" href="#">Zaloguj się <i class="fas fa-regular fa-user fa-sm"></i></a> </span>
+                        <hr>
+                    </div>
+            </div>
+    </nav>
+   
+</header> 
+
+<main><!--main-->
+
+    <div class="container"> <!--info, kontakt-->
+        <div class="row">
+            <div class="col-md-8 col-sm-12 pt-4 pb-4 info2">
+                <span><h4><i class="fa-solid fa-phone fa-2xl" style="color: #324b76;"></i>&nbsp;&nbsp;&nbsp; Zadzwoń</h4></span>
+                <div class="pt-3 mt-3">
+                    <p class="infoText">Infolinia ogólnopolska</p>
+                    <a href="tel: 22 211 324 111" class="nrTel">22 211 324 111</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 pt-3 mt-3">
+                <div class="p-5 info">
+                    <h2>Pizzeria Polska sp. z.o.o z siedzibą w Warszawie</h2>
+                    <h6>ul. Dąbrowicza 33, 04-944 W-wa
+                    <br>
+                    KRS: 0100324156
+                    <br>
+                    NIP: 5113214211
+                    <br>
+                    REGON: 122312441
+                    <br>
+                    Kapitał zakł.: 84 123 444 zł wpłacony w całości.
+                    <br>
+                    Nr rach.: 11 4123 4441 0000 0000 1233 4111
+                    </h6>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container"> <!--formularze-->
+        <div class="pt-5 pb-5">
+            <span><i class="fa-regular fa-envelope fa-2xl"></i></span>
+        </div>
+        <div class="contact-bot">
+            <ul class="nav nav-tabs" id="contactTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active tabName" id="reklamacja-tab" data-bs-toggle="tab" data-bs-target="#reklamacja" type="button" role="tab" aria-controls="reklamacja" aria-selected="true">Reklamacja</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link tabName" id="error-tab" data-bs-toggle="tab" data-bs-target="#error" type="button" role="tab" aria-controls="error" aria-selected="false">Błąd na stronie</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link tabName" id="other-tab" data-bs-toggle="tab" data-bs-target="#other" type="button" role="tab" aria-controls="other" aria-selected="false">Inne</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="contactTabContent">  <!--reklamacje-->
+                <div class="tab-pane fade show active content" id="reklamacja" role="tabpanel" aria-labelledby="reklamacja-tab">
+                    <form action="get" method="POST">
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <div class="row mt-3">
+                                    <div class="col-md-7">
+                                        <label for="name" class="form-label">Imię i nazwisko</label>
+                                        <input type="text" class="form-control" id="name">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-7">
+                                        <label for="nrTel" class="form-label">Numer telefonu</label>
+                                        <input type="text" class="form-control" id="nrTel">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-7">
+                                        <label for="mail" class="form-label">Adres e-mail</label>
+                                        <input type="text" class="form-control" id="mail">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-7">
+                                        <label for="date" class="form-label">Data zamówienia</label>
+                                        <input type="text" class="form-control" id="date" placeholder="DD/MM/YYYY">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-7">
+                                        <label for="content" class="form-label">Treść wiadomości</label>
+                                        <textarea name="content" id="content" cols="45" rows="2"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row mt-3">
+                                    <div class="col-md-7">
+                                        <label for="city" class="form-label">Miasto</label>
+                                        <input type="text" class="form-control" id="city">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-7">
+                                        <label for="street" class="form-label">Ulica</label>
+                                        <input type="text" class="form-control" id="street">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-7">
+                                        <label for="nrHouse" class="form-label">Numer budynku</label>
+                                        <input type="text" class="form-control" id="nrHouse">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-7">
+                                        <label for="nrFlat" class="form-label">Numer lokalu</label>
+                                        <input type="text" class="form-control" id="nrFlat">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-7">
+                                        <label for="payment ID" class="form-label">ID płatności(jeżeli zamówienie opłacono online)</label>
+                                        <input type="text" class="form-control" id="paymentID">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-7">
+                                        <label for="file" class="form-label">Załączniki</label>
+                                        <input class="form-control form-control-sm" id="file" type="file">
+                                        <br>
+                                        <input class="form-control form-control-sm" id="file" type="file">
+                                        <br>
+                                        <input class="form-control form-control-sm" id="file" type="file">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>   
+                    <div class="row mt-5 rodo p-3">
+                        Administratorem Twoich danych osobowych podanych w powyższym formularzu jest Pizzeria Polska sp. z.o.o z siedzibą w Warszawie przy ul. Dąbrowicza 33, 04-944 Warszawa.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est at ratione libero dignissimos explicabo vitae. Nemo aliquam dignissimos amet 
+                        dolores laborum, ducimus odit provident temporibus, qui ipsum minima quis illo similique enim eum laboriosam maxime modi id. Hic rerum facere sequi 
+                        alias a quia quo ullam, accusantium dolore provident dolorem et voluptates veritatis dolor sint repudiandae debitis ex quas aperiam voluptas suscipit 
+                        excepturi aliquid! Magnam corrupti quos id voluptas dicta odit. Omnis quod quasi asperiores rerum incidunt! Aliquam praesentium et ut hic nihil dolor perspiciatis
+                        illo, distinctio consequatur voluptas voluptatibus suscipit ipsum? Quo illo assumenda cupiditate, repellendus iste quidem sunt tempora deserunt nisi atque excepturi
+                        amet! Id est fugit nisi dolor, adipisci incidunt laboriosam molestiae mollitia nulla voluptatum ratione nihil in tenetur ex officiis quibusdam amet odio perspiciatis 
+                        alias quis hic pariatur ut earum impedit. 
+                        Fugiat ut praesentium quidem officia ex voluptatem in cumque, dolorum repellat rerum quo quasi veritatis?
+                    </div>
+                    <div class="row mt-5 mb-5">
+                        <button class="btn btn-primary submit-btn">Wyślij</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade content" id="error" role="tabpanel" aria-labelledby="error-tab"> <!--błedy na stronie-->
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <label for="name2" class="form-label">Imię i Nazwisko</label>
+                            <input type="text" class="form-control" id="name2">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <label for="mail" class="form-label">Adres e-mail</label>
+                            <input type="text" class="form-control" id="mail">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <label for="content2" class="form-label">Treść wiadomości</label>
+                            <textarea name="content" id="content2" cols="45" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mt-5 rodo p-3">
+                        Administratorem Twoich danych osobowych podanych w powyższym formularzu jest Pizzeria Polska sp. z.o.o z siedzibą w Warszawie przy ul. Dąbrowicza 33, 04-944 Warszawa.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ad quaerat. Optio a deleniti alias, sit natus in 
+                        laborum voluptatum maxime rem ipsa animi at, vel magni recusandae pariatur incidunt ratione dolorum! Consequuntur 
+                        quibusdam incidunt aperiam aut enim ea error accusamus vero excepturi. Unde ipsam molestiae fugiat dicta quia inventore
+                         voluptatibus explicabo quas accusamus iusto provident, at necessitatibus ducimus eaque quidem, qui eveniet nostrum nihil 
+                         doloremque, nam impedit expedita eum quis quod? Dolores laboriosam iste nesciunt unde odit! Officiis corrupti reprehenderit eum error 
+                         atque sunt nemo autem, quisquam dolorem ipsa rem impedit accusantium labore id, reiciendis dolore asperiores cum facere nesciunt, amet omnis. 
+                         Possimus asperiores cupiditate doloremque vitae voluptatibus rerum, eius impedit! Dicta minus unde aperiam, exercitationem perferendis quas, neque, 
+                         cum modi ducimus amet incidunt. Similique ipsa nam libero tenetur quam magni, dolorum quia inventore, sequi maiores quae magnam.
+                         Nesciunt molestias aspernatur repudiandae, officiis eveniet similique animi vel inventore pariatur?
+                    </div>
+                    <div class="row mt-5 mb-5">
+                        <button class="btn btn-primary submit-btn">Wyślij</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade content" id="other" role="tabpanel" aria-labelledby="other-tab"> <!--inne-->
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <label for="name3" class="form-label">Imię i Nazwisko</label>
+                            <input type="text" class="form-control" id="name3">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <label for="mail" class="form-label">Adres e-mail</label>
+                            <input type="text" class="form-control" id="mail">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <label for="content3" class="form-label">Treść wiadomości</label>
+                            <textarea name="content" id="content3" cols="45" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mt-5 rodo p-3">
+                        Administratorem Twoich danych osobowych podanych w powyższym formularzu jest Pizzeria Polska sp. z.o.o z siedzibą w Warszawie przy ul. Dąbrowicza 33, 04-944 Warszawa.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur qui ut, laboriosam accusantium molestiae voluptates, natus minus 
+                        unde mollitia perspiciatis similique quisquam omnis totam labore incidunt suscipit voluptate atque modi, enim illo tenetur beatae ducimus. 
+                        Illum, expedita qui obcaecati distinctio id laudantium fugit sequi, hic reiciendis repellat veritatis provident voluptatum quisquam ea odio 
+                        laborum consequuntur, nam est at? Esse explicabo, architecto dolor odit possimus est laboriosam, consequatur qui ullam id voluptas molestias non 
+                        adipisci quidem, porro natus eius totam libero alias. Ullam soluta itaque similique corrupti voluptatibus, eligendi ab odit illum? Unde eum vitae, 
+                        pariatur error dolores laboriosam nihil fugiat laudantium fugit recusandae rem vel quae itaque? Mollitia natus incidunt laborum provident, enim dolor 
+                        nostrum magnam est deleniti dolorem, omnis quibusdam, autem adipisci veritatis dolores quae voluptate iure distinctio ex. Temporibus eveniet laudantium 
+                        dicta sit delectus in, 
+                        totam praesentium tenetur nesciunt voluptas ipsam quasi ducimus soluta et laborum perferendis molestiae?
+                    </div>
+                    <div class="row mt-5 mb-5">
+                        <button class="btn btn-primary submit-btn">Wyślij</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        
+    
+</main> 
+    
+<footer> <!--footer-->
+    <div class="container mt-2">
+        <div class="row ms-md-5">
+            <div class="col-md-9">
+                <a href="Website.html"><img src="images/logo.jpg" alt="" id="footLogo" class="me-md-5"></a>
+                <a href="Menu/Pizza.html" class="me-md-5 text">Menu</a>
+                <a href="Blog.html" class="me-md-5 text">Blog</a>
+                <a href="Praca.html" class="me-md-5 text">Praca</a>
+                <a href="Kontakt.html" class="me-md-5 text">Kontakt</a>
+            </div>
+        
+            <div class="col-md-3 mt-2">
+                <a href="#" class="ms-md-4"><i class="fas fa-brands fa-facebook-f footIcon"></i></a>&nbsp;&nbsp;
+                <a href="#" class="ms-md-4"><i class="fas fa-brands fa-instagram footIcon"></i></a></i>&nbsp;&nbsp;
+                <a href="#" class="ms-md-4"><i class="fas fa-brands fa-youtube footIcon"></i></a>&nbsp;&nbsp;
+            </div>  
+        </div>
+        
+    </div>
+    <div class="container mt-2 ps-5 pe-5" id="footInner">
+        <a href="#" class="ms-md-2 footText">Polityka prywatności</a>
+        <a href="#" class="ms-md-2 footText">Regulamin serwisu</a>
+        <a href="#" class="ms-md-2 footText">Informacje o alergenach</a>
+        <a href="#" class="ms-md-2 footText">Regulaminy promocji</a>
+        <a href="#" class="ms-md-2 footText">Dla akcjonariuszy</a>
+        <p class="footerText">2023 pizzeria. All rights resereved</p>
+    </div>
+</footer> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md mt-3"><!--navbar-->
+        <a href="Website.html" class="navbar-brand ms-5"><img src="images/logo.jpg" alt="" id="imgLogo"></a> 
+        <div class="container-fluid mt-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"> <!--Ikonka z rozwijanym navbarem, breakpoint md-->
+            <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarMenu"> 
+                    <ul class="navbar-nav ms-4 me-auto mb-2 mb-md-0">
+                        <li class="nav-item active">  <!--podstrony-->
+                            <a href="Menu/Pizza.html" class="nav-link text me-md-5">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Blog.html" class="nav-link text me-md-5">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Praca.html" class="nav-link text me-md-5">Praca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Kontakt.html" class="nav-link text me-md-5">Kontakt</a>
+                        </li>
+                    </ul>
+                    <div> <!--logowanie-->
+                        <span class="mt-0"><a class="link-dark text-decoration-none" href="#">Zaloguj się <i class="fas fa-regular fa-user fa-sm"></i></a> </span>
+                        <hr>
+                    </div>
+            </div>
+    </nav>
+   
+</header> 
+
+<main><!--main-->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 container p-2"><!--karuzela, jakieś informacje,promocje itp.-->
+                <div id="carousel" data-bs-ride="carousel" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button data-bs-target="carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button data-bs-target="carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button data-bs-target="carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/pizza1.jpg" class="d-block w-100"alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/pizza2.jpg" class="d-block w-100"alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/pizza3.jpg" class="d-block w-100"alt="">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Poprzedni</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Następny</span>
+                    </button>
+
+                </div>
+            </div> 
+            <div class="col-md-6 container"> <!--formularz do zamówienia-->
+                <span><h4 class="text-center mt-3">Zamów Online</h4></span>
+                    <ul class="nav nav-tabs justify-content-center mt-4" id="myOrders" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active tabName" id="delivery-tab" data-bs-toggle="tab" data-bs-target="#delivery-tab-pane" type="button" role="tab" 
+                          aria-controls="delivery-tab-pane" aria-selected="true"><i class="fas fa-sharp fa-regular fa-truck-fast fa-2xl me-2"></i> Dostawa</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link tabName" id="takeAway-tab" data-bs-toggle="tab" data-bs-target="#takeAway-tab-pane" type="button" role="tab" 
+                          aria-controls="takeAway-tab-pane" aria-selected="false"><i class="fas fa-regular fa-store fa-2xl me-2"></i> Odbiór osobisty</button>
+                        </li>
+                    </ul>
+                <div class="tab-content" id="myOrdersContent">
+                    <div class="tab-pane fade show active content" id="delivery-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <form class="p-4" method="POST">
+                            <div class="mb-2">
+                                <label class="form-label" for="city">Miasto</label>
+                                <input type="text" class="form-control" id="city">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="street">Ulica</label>
+                                <input type="text" class="form-control" id="street">
+                            </div>
+                            <div class="input-group mb-2">
+                                <div class="mb-1 me-4">
+                                    <label for="houseNr">Numer domu</label>
+                                    <input type="text" class="form-control" id="houseNr">
+                                </div>
+                                <div class="mb-1">
+                                    <label for="flatNr">Numer mieszkania</label>
+                                    <input type="text" class="form-control" id="flatNr">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <button class="btn btn-primary deliveryBtn" type="submit">Dalej</button>    
+                        </div>
+                    </div>
+                    <div class="tab-pane fade content" id="takeAway-tab-pane" role="tabpanel" aria-labelledby="takeAway-tab" tabindex="0">
+                        <p class="text-center mt-2">Podaj adres, a znajdziemy dla Ciebie najbliższy lokal</p>
+                            <form class="p-4" method="POST">
+                                <div class="mb-2">
+                                    <label class="form-label" for="city">Miasto</label>
+                                    <input type="text" class="form-control" id="city">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="street">Ulica</label>
+                                    <input type="text" class="form-control" id="street">
+                                </div>
+                                <div class="input-group mb-2">
+                                    <div class="mb-1 me-4">
+                                        <label for="houseNr">Numer domu</label>
+                                        <input type="text" class="form-control" id="houseNr">
+                                    </div>
+                                    <div class="mb-1">
+                                        <label for="flatNr">Numer mieszkania</label>
+                                        <input type="text" class="form-control" id="flatNr">
+                                    </div>
+                                </div>
+                            </form>
+                        <div class="row">
+                            <button class="btn btn-primary deliveryBtn" type="submit">Wybierz lokal</button>    
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="container mt-3 p-3 mb-4"> <!--newsletter-->
+        <div class="row">
+            <div class=" col-md-4 p-3">
+                <img src="images/pizza4.jpg" class="d-block w-100 h-100"alt="">
+            </div>
+            <div class="col-md-4 p-3">
+                <h3 class="text-center">30% rabatu na downolną pizzę online!</h3>
+                <h6>
+                    <br>
+                    <p class="newsPar">✓ Zapisz się do newslettera i odbierz kod na 30% rabatu na dowolną pizzę</p>
+                    <br>
+                    <br>
+                    <p class="newsPar">✓ Zyskaj dostęp do najlepszych pormocni oraz dedykowanych zniżek i kuponów</p>
+                    <br>
+                </h6>
+                <form class="pe-3 ps-3" method="POST">
+                    <input type="text" class="form-control" id="newsEmail" placeholder="Podaj adres email">
+                    <br>
+                    <p><input type="checkbox"> Wyrażam zgodę na kontaktowanie się ze mną, w tym na przesyłanie informacji handlowych i marketingowych</p>
+                </form>
+                <br>
+                <div>
+                    <button class="btn btn-primary" type="submit" id="newsBtn">Odbierz rabat</button>
+                </div>
+                
+            </div>
+            <div class="col-md-4 p-3">
+                <img src="images/pizza5.jpg" class="d-block w-100 h-100" alt="">
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container mt-2 p-3">
+        <div class="row">
+            <div class="col-md-12">
+               <img src="images/pizza6.jpg" alt="" id="footImg" class="d-block w-100"> 
+            </div>
+        </div>
+    </div>
+    
+        
+    
+</main> 
+    
+<footer> <!--footer-->
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-md-9 col-sm-9 mt-4">
+                <a href="Website.html"><img src="images/logo.jpg" alt="" id="footLogo" class="me-md-5"></a>
+                <a href="Menu/Pizza.html" class="me-md-5 text">Menu</a>
+                <a href="Blog.html" class="me-md-5 text">Blog</a>
+                <a href="Praca.html" class="me-md-5 text">Praca</a>
+                <a href="Kontakt.html" class="me-md-5 text">Kontakt</a>
+            </div>
+        
+            <div class="col-md-3 col-sm-3 mt-4">
+                <a href="#" class="ms-md-4"><i class="fas fa-brands fa-facebook-f footIcon"></i></a>&nbsp;&nbsp;
+                <a href="#" class="ms-md-4"><i class="fas fa-brands fa-instagram footIcon"></i></a></i>&nbsp;&nbsp;
+                <a href="#" class="ms-md-4"><i class="fas fa-brands fa-youtube footIcon"></i></a>&nbsp;&nbsp;
+            </div>  
+        </div>
+        
+    </div>
+    <div class="container mt-2 ps-5 pe-5" id="footInner">
+        <a href="#" class="ms-md-2 footText">Polityka prywatności</a>
+        <a href="#" class="ms-md-2 footText">Regulamin serwisu</a>
+        <a href="#" class="ms-md-2 footText">Informacje o alergenach</a>
+        <a href="#" class="ms-md-2 footText">Regulaminy promocji</a>
+        <a href="#" class="ms-md-2 footText">Dla akcjonariuszy</a>
+        <p class="copyText">2023 pizzeria. All rights resereved</p>
+    </div>
+</footer> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

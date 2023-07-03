@@ -1,0 +1,294 @@
+*{
+    font-family: "Poppins";
+}
+
+/* main page*/
+#imgLogo {
+    height: 60px;
+    width: 80px;
+}
+
+#footLogo{
+    height:50px;
+    width:70px;
+}
+
+main {
+    background-color: rgba(245, 245, 245, 0.9);
+}
+
+.deliveryBtn{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 6px 6px 16px;
+}
+
+.deliveryBtn:hover{
+    border: 5px solid white;
+    box-shadow:rgba(2, 47, 247, 0.24) 12px 12px 32px;
+    background-color:rgba(2, 47, 247, 0.9);
+}
+
+.newsPar{
+    text-align: center;
+}
+
+#newsEmail{
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+}
+
+#newsBtn{
+    width: 70%;
+    margin-left: 15%;
+    border: 3px solid white;
+    box-shadow: rgba(0, 0, 0, 0.24) 6px 6px 16px;
+    
+}
+
+.text {
+    text-decoration: none;
+    color: black;
+    font-weight:bold;
+}
+
+.text:hover{
+    color: rgba(54, 179, 251, 0.9);
+    font-weight:bold;
+}
+
+/* footer */
+
+#footImg{
+    height:100%;
+    width:100%;
+}
+
+.footIcon{
+    color: rgb(30,48,80)
+}
+
+.footIcon:hover{
+    color:rgba(247, 38, 38, 0.9);
+}
+
+.footText{
+    font-size: 0.8rem;
+    color: rgb(30,48,80);
+    text-decoration: none;
+}
+
+.footText:hover{
+    color:rgba(54, 179, 251, 0.9);
+    font-weight: bold;
+}
+
+.copyText{
+    font-size: 0.7rem;
+    color: silver;
+}
+
+#footInner{
+    text-align: center;
+}
+
+/* menu main Navbar */
+
+.mainNav{
+    background-color:rgba(213, 200, 189, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 4px;
+}
+
+.active{
+    color:rgba(54, 179, 251, 0.9);
+}
+
+/* cards */
+.pizzaTitle{
+    color:rgba(10, 97, 152, 0.8)
+}
+
+/* kontakt */
+
+.info{
+    background-color:rgb(240, 231, 215, 0.6) ;
+    font-weight: bold;
+    padding-left: 3%;
+    padding-right: 3%;
+    
+}
+
+.infoText {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.nrTel {
+    text-decoration: none;
+    color:rgb(54, 137, 255);
+    font-weight: bold;
+}
+
+.nrTel:hover{
+    color:rgb(0, 213, 255);
+}
+
+.rodo{
+    border: 1px solid silver;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 0.8rem;
+}
+
+.content{ /* tabs content */
+    color: black;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.submit-btn{ /* przycisk */
+    width: 25%;
+    margin-left:auto;
+    margin-right:auto;
+    border: 5px solid white;
+    font-size: 1.2rem;
+    font-weight:bold;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.submit-btn:hover{
+    background-color:rgb(19, 0, 194);
+    color:white;
+}
+
+textarea{
+    resize:none;
+    height: 5rem;
+    border-radius: 5px;
+    width: 22rem;
+}
+
+/* blog */
+
+.userName{
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: silver;
+}
+
+.blogText{
+    font-size: 0.95rem;
+}
+
+.date-text{
+    font-weight: 500;
+}
+
+/* work */
+
+.workImg{
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .workImg{
+        min-height: 27rem;
+    }
+}
+
+@media (max-width: 920px) {
+    .workImg{
+        min-height: 21rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .workImg{
+        min-height: 17rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .workImg{
+        min-height: 12rem;
+    }
+}
+
+
+
+.description{
+    font-size: 0.9rem;
+}
+
+.workText{
+    font-size: 0.85rem;
+}
+
+.bolded{
+    font-weight: bold;
+}
+
+/* offer box */
+.offer{ 
+
+    border: 1px solid silver;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px;
+}
+
+.offer:hover{
+    box-shadow: rgba(0, 135, 205, 0.8) 0px 5px 25px;
+}
+
+.offerLink{
+    text-decoration: none;
+    color: black;
+}
+
+.offerDate{
+    font-size: 0.8rem;
+    color:silver;
+    padding-top: 3px;
+}
+
+.offerTitle{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgba(6, 149, 215, 0.8);
+    margin-bottom: 10%;
+}
+
+.offerDes{
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.offerCity{
+    font-size: 0.85rem;
+    margin-bottom: 0px;
+}
+
+/* cv btn */
+.cv-btn{
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+.cv-btn:hover{
+    background-color: rgba(245, 245, 245, 0.9);;
+    color: lightblue;
+}
+
+.tabName{
+    color: black;
+    font-weight: 600;
+}
