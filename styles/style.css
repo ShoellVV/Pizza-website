@@ -197,32 +197,6 @@ textarea{
     width: 100%;
 }
 
-@media (min-width: 1200px) {
-    .workImg{
-        min-height: 27rem;
-    }
-}
-
-@media (max-width: 920px) {
-    .workImg{
-        min-height: 21rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .workImg{
-        min-height: 17rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .workImg{
-        min-height: 12rem;
-    }
-}
-
-
-
 .description{
     font-size: 0.9rem;
 }
